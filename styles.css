@@ -87,12 +87,3 @@ footer {
 {
     transform: rotate(-35deg) skew(-30px);
 }
-.anh2
-{
-    background-size: 100%;
-    transition: 3s ease-in-out;
-}
-.anh2:hover
-{
-    transform: scale(30px) translateY(30x);
-}
