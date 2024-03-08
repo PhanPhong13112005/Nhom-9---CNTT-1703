@@ -81,9 +81,9 @@ footer {
 {
     width: 450px;
     height: 300px;
-    transition:  0.5s ease-in-out;
+    transition:  all 1.1s;
 }
 .anh:hover
 {
-    transform: rotate(-35deg) skew(-30px);
+    transform: scale(0.9);
 }
