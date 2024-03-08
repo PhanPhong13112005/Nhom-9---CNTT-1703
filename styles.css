@@ -81,5 +81,18 @@ footer {
 {
     width: 450px;
     height: 300px;
-    
+    transition:  0.5s ease-in-out;
+}
+.anh:hover
+{
+    transform: rotate(-35deg) skew(-30px);
+}
+.anh2
+{
+    background-size: 100%;
+    transition: 3s ease-in-out;
+}
+.anh2:hover
+{
+    transform: scale(30px) translateY(30x);
 }
