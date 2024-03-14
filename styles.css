@@ -148,3 +148,47 @@ footer {
 {
     margin-top: 10px;
 }
+.sao
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+input
+{
+    appearance: none;
+}
+input::before
+{
+    content: "\2605";
+    color: #ccc;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+input:checked::before,input:checked ~input::before
+{
+    color: #ffb800;
+}
+.co
+{
+    border-radius: 5px 5px 5px 5px;
+    width: 100px;
+    height: 20px;
+}
+.nhom3
+{
+    display: flex;
+    justify-content: space-between;
+}
+.xa
+{
+    margin-top: 20px;
+}
+.nhom4
+{
+    margin-left: 30px;
+}
+.xa p
+{
+    margin-top: 20px; 
+}
