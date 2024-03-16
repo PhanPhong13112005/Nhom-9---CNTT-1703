@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
 
@@ -129,18 +135,6 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-}
-.sanpham2
-{
-    margin-top: 10px;
-}
-.sanpham2 h2
-{
-    margin-top: 10px; 
-}
-.sanpham2 p
-{
-    margin-top: 10px;
 }
 .sao
 {
