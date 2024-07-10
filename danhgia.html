@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đánh giá</title>
+  <link rel="stylesheet" href="styles2.css">
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault(); 
+      const name = document.getElementById('name').value;
+      const rating = document.getElementById('rating').value;     
+      alert(`Cảm ơn bạn '${name}' đã đánh: ${rating} sao || bình luận của bạn đã được lưu`);
+      
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Hãy đánh giá chúng tôi</h1>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="sanpham.html">Sản Phẩm</a></li>
+        <li><a href="thanhvien.html">Thành Viên</a></li>
+        <li><a href="dangnhap.html"> Đăng nhập</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>Đánh giá sản phẩm</h1>
+    <form onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <label for="name">Tên của bạn:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="rating">Đánh giá:</label>
+        <select id="rating" name="rating" required>
+          <option value="">Chọn đánh giá</option>
+          <option value="5">5 sao - Rất tốt</option>
+          <option value="4">4 sao - Tốt</option>
+          <option value="3">3 sao - Trung bình</option>
+          <option value="2">2 sao - Kém</option>
+          <option value="1">1 sao - Rất kém</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="comment">Bình luận:</label>
+        <textarea id="comment" name="comment"></textarea>
+      </div>
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+  <footer>
+    <div class="nhom">
+      <p>&copy; Trang web đang được sở hữu bản quyền của Nhóm 9 <img src="anh/Nhóm 9.png" class="rong2"> </p>
+    </div>
+  </footer>
+</body>
+</html>

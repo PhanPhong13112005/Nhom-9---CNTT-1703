@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopLP.vn</title>
+    <link rel="stylesheet" href="shoplp.css">
+</head>
+<body>
+    <header>
+        <h1>Sản Phẩm</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="thanhvien.html">Thành Viên</a></li>
+                <li><a href="danhgia.html">Đánh Giá</a></li>
+                <li><a href="dangnhap.html"> Đăng nhập</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="ds-sanpham">
+            <div class="sanpham">
+                <img src="anh/ninja650.jpg" class="anh">
+                <h3>Ninja 650 ABS</h3>
+                <p>Năm sản xuất: 2019</p>
+                <p>Động cơ (phân khối): 649cc</p>
+                <p>Giá: 119.500.000 VNĐ</p>
+                <button onclick="addToCart('Ninja 650 ABS', 119.500)" class="button" >Thêm vào giỏ</button>
+            </div>
+            <div class="sanpham">
+                <img src="anh/BMW S1000RR.jpg" class="anh">
+                <h3>BMW S1000RR</h3>
+                <p>Năm sản xuất: 2009</p>
+                <p>Động cơ (phân khối): 1000cc</p>
+                <p>Giá: 599.000.000 VNĐ</p>
+                <button onclick="addToCart('BMW S1000RR', 599.000)" class="button">Thêm vào giỏ</button>
+            </div>
+            <div class="sanpham">
+                <img src="anh/CBR 650R.jpg" class="anh">
+                <h3>CBR 650R</h3>
+                <p>Năm sản xuất: 2018</p>
+                <p>Động cơ (phân khối): 649cc</p>
+                <p>Giá: 254.000.000 VNĐ</p>
+                <button onclick="addToCart('Ninja 650 ABS', 254.000)" class="button">Thêm vào giỏ</button>
+            </div>
+            <div class="sanpham">
+                <img src="anh/z1000.jpg" class="anh">
+                <h3>z1000</h3>
+                <p>Năm sản xuất: 2011</p>
+                <p>Động cơ (phân khối): 1.043cc</p>
+                <p>Giá: 439.000.000 VNĐ</p>
+                <button onclick="addToCart('z1000', 439.000)" class="button">Thêm vào giỏ</button>
+            </div>
+            <div class="sanpham">
+                <img src="anh/zx-6r.jpg" class="anh">
+                <h3>ZX-6R</h3>
+                <p>Năm sản xuất: 1995</p>
+                <p>Động cơ (phân khối): 636cc</p>
+                <p>Giá: 246.000.000 VNĐ</p>
+                <button onclick="addToCart('ZX-6R', 246.000)" class="button">Thêm vào giỏ</button>
+            </div>
+            <div class="sanpham">
+                <img src="anh/DUCATI 959.jpg" class="anh">
+                <h3>DUCATI 959</h3>
+                <p>Năm sản xuất: 2016 và 2017</p>
+                <p>Động cơ (phân khối): 955cc</p>
+                <p>Giá: 593.000.000 VNĐ</p>
+                <button onclick="addToCart('DUCATI 959', 593.000)" class="button">Thêm vào giỏ</button>
+            </div>
+            <div class="sanpham">
+                <img src="anh/Ninja H2r.jpg" class="anh">
+                <h3>Ninja H2r</h3>
+                <p>Năm sản xuất: 2014</p>
+                <p>Động cơ (phân khối): 998cc</p>
+                <p>Giá: 1.300.000.000 VNĐ</p>
+                <button onclick="addToCart('Ninja H2r', 1300.000)" class="button">Thêm vào giỏ</button>
+            </div>
+            <div class="sanpham">
+                <img src="anh/Kawasaki Z900RS.jpg" class="anh">
+                <h3>Kawasaki Z900RS</h3>
+                <p>Năm sản xuất: 2017</p>
+                <p>Động cơ (phân khối): 948cc</p>
+                <p>Giá: 439.000.000 VNĐ</p>
+                <button onclick="addToCart('Kawasaki Z900RS', 439.000)" class="button">Thêm vào giỏ</button>
+            </div>
+            <div class="sanpham">
+                <section id="cart">
+                    <h2>Giỏ hàng của bạn</h2>
+                    <ul id="cart-items">
+                    </ul>
+                    <p>Tổng: <span id="cart-total">0</span>.000.000 VNĐ</p>
+                    <button onclick="checkout()">Thanh Toán</button>
+                </section>
+            </div>
+        </div>
+        <a href="#top"><button class="button">Lên đầu</button></a>
+        <div id="list"></div>
+    <div id="popup">
+      <div id="background">
+        <div>Tên đăng nhập</div>
+      <input type="text" id="name" class="test"><br/>
+      <div>Mật khẩu</div>
+      <input type="password" id="lnik" class="test"><br/>
+      <button>Đăng nhập</button>
+      </div>
+    </div>
+  </div>
+    </main>
+    <footer>
+        <div class="nhom">
+            <p>&copy; Trang web đang được sở hữu bản quyền của Nhóm 9 <img src="anh/Nhóm 9.png" class="rong2"> </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.ds-sanpham {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sanpham {
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center; 
+}
+
+.sanpham img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.sanpham h2 {
+    margin: 10px 0;
+}
+
+.sanpham p {
+    margin: 5px 0;
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 10px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li:hover::after
+{
+    width: 100%;
+}
+.anh {
+    transition: all 1.1s;
+}
+
+.anh:hover {
+    transform: scale(0.9);
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.nhom4 {
+    margin-left: 30px;
+}
+.rong2 {
+    width: 20px;
+    height: 20px;
+}
+#cart {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 0.5rem;
+}
+
+#cart-items li span {
+    margin-left: 1rem;
+}
+
+#cart button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+}
+
+#cart button:hover {
+    background-color: #218838;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: all 0.5s ease-in-out;
+}
+  
+.button:hover 
+{
+    color: #007bff;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+#popup
+  {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000a6;
+    visibility: hidden;
+  }
+#background
+  {
+    width: fit-content;
+    background-color: gray;
+    padding: 26px;
+    border-radius: 6px;
+    margin: auto;
+    margin-top: 200px;
+  }
+  
